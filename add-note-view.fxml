@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10"
+      xmlns="http://javafx.com/javafx/8.0"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="notessecured.controllers.AddNoteController">
+
+    <TextField fx:id="titleField" promptText="Enter title"/>
+    <TextArea fx:id="contentField" promptText="Enter content"/>
+    <Button text="Save" onAction="#saveNote"/>
+</VBox>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="notessecured.controllers.MainController">
+
+    <top>
+        <Label text="Note Application" style="-fx-font-size: 18px;"/>
+    </top>
+
+    <center>
+        <ListView fx:id="notesListView"/>
+    </center>
+
+    <bottom>
+        <HBox spacing="10">
+            <Button text="Add Note" onAction="#openAddNoteWindow"/>
+            <Button fx:id="editButton" text="Edit Note" disable="true" onAction="#openEditNoteWindow"/>
+            <Button fx:id="deleteButton" text="Delete Note" disable="true" onAction="#deleteSelectedNote"/>
+        </HBox>
+    </bottom>
+</BorderPane>
